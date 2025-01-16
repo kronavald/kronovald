@@ -15,10 +15,7 @@ export const Hero = () => {
                                 <h1 className="mb-6 text-3xl font-bold tracking-tighter text-transparent text-white sm:text-5xl xl:text-6xl/none">
                                     {t("title")}
                                 </h1>
-                                <Button
-                                    className="font-semibold gap-3 py-6 text-lg"
-                                    size={"lg"}
-                                >
+                                <Button className="font-semibold gap-3 py-6 text-lg" size={"lg"}>
                                     <a href="https://github.com/kronavald/kronovald">
                                         <Zap />
                                         {t("title")}
@@ -31,35 +28,22 @@ export const Hero = () => {
                                         <div className="rounded-full bg-black p-4 text-white">
                                             <Rocket size={32} />
                                         </div>
-                                        <h2 className="text-2xl font-bold text-white">
-                                            {t("features")}
-                                        </h2>
-                                        <p className="text-white">
-                                            {t("features")}
-                                        </p>
+                                        <h2 className="text-2xl font-bold text-white">{t("features")}</h2>
+                                        <p className="text-white">{t("features")}</p>
                                     </div>
                                     <div className="flex flex-col items-center space-y-2 rounded-lg p-4">
                                         <div className="rounded-full bg-black p-4 text-white">
                                             <Globe2 size={32} />
                                         </div>
-                                        <h2 className="text-2xl font-bold text-white">
-                                            {t("features")}
-                                        </h2>
-                                        <p className="text-white">
-                                            {t("features")}
-                                        </p>
+                                        <h2 className="text-2xl font-bold text-white">{t("features")}</h2>
+                                        <p className="text-white">{t("features")}</p>
                                     </div>
                                     <div className="flex flex-col items-center space-y-2 rounded-lg p-4">
                                         <div className="rounded-full bg-black p-4 text-white">
                                             <Wrench size={32} />
                                         </div>
-                                        <h2 className="text-2xl font-bold text-white">
-                                            {" "}
-                                            {t("features")}{" "}
-                                        </h2>
-                                        <p className="text-white">
-                                            {t("features")}
-                                        </p>
+                                        <h2 className="text-2xl font-bold text-white"> {t("features")} </h2>
+                                        <p className="text-white">{t("features")}</p>
                                     </div>
                                 </div>
                             </div>

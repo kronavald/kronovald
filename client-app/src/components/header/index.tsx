@@ -31,11 +31,7 @@ export function Header(props: IProps) {
             <div className="flex items-center gap-4">
                 <LanguageSelector />
                 <Button size={"icon"} className="rounded-full">
-                    <a
-                        href="https://github.com/kronavald/kronovald"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
+                    <a href="https://github.com/kronavald/kronovald" target="_blank" rel="noreferrer">
                         <Github />
                     </a>
                 </Button>

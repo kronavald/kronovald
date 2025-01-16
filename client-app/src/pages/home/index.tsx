@@ -71,25 +71,14 @@ export default function Home() {
             <section className="w-full py-32 md:py-48 flex flex-col items-center justify-center">
                 <h1 className="text-black">{t("title")}</h1>
                 {isSuccess && (
-                    <Editor
-                        onChange={handleChange}
-                        content={content ? content : data?.blob}
-                        ref={editorRef}
-                    />
+                    <Editor onChange={handleChange} content={content ? content : data?.blob} ref={editorRef} />
                 )}
                 <Button onClick={handleSave} disabled={isPending}>
                     {isPending ? <Loader2 /> : "Save"}
                 </Button>
-                {isSuccess && !isSuccessSave && (
-                    <div>
-                        Initial data from backend: {JSON.stringify(data.blob)}
-                    </div>
-                )}
+                {isSuccess && !isSuccessSave && <div>Initial data from backend: {JSON.stringify(data.blob)}</div>}
                 {isSuccessSave && isSuccess && (
-                    <div>
-                        Successfully saved to backed data:{" "}
-                        {JSON.stringify(data.blob)}
-                    </div>
+                    <div>Successfully saved to backed data: {JSON.stringify(data.blob)}</div>
                 )}
             </section>
         </div>

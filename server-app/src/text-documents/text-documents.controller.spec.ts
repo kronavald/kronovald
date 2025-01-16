@@ -11,9 +11,7 @@ describe("TextDocumentsController", () => {
             providers: [TextDocumentsService],
         }).compile()
 
-        controller = module.get<TextDocumentsController>(
-            TextDocumentsController,
-        )
+        controller = module.get<TextDocumentsController>(TextDocumentsController)
     })
 
     it("should be defined", () => {

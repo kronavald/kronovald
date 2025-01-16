@@ -1,6 +1,9 @@
 {
+  "experimentalTernaries": true,
+  "bracketSameLine": false,
   "singleQuote": false,
   "trailingComma": "all",
   "semi": false,
-  "quoteProps": "consistent"
+  "quoteProps": "consistent",
+  "printWidth": 120
 }
